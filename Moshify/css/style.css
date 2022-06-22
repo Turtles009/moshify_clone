@@ -129,7 +129,7 @@ a {
 
 @media screen and (min-width: 1024px) {
     .badge {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .badge--small {
@@ -206,7 +206,7 @@ a {
     font-weight: 600;
     margin: 1rem 0;
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
@@ -298,6 +298,9 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
+    /* To avoid the below problem, width is set to 0 */
+    /* Input field grows larger than the input group container due to auto width assignment by the browser, this pushes the button out of the input group container*/
 }
 
 .input-group .btn {
@@ -762,6 +765,7 @@ a {
 }
 
 .block-domain__prices {
+    color: var(--color-headings);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 6rem);
