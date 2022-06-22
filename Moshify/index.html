@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moshify</title>
+    <title>Moshify - Go Online for Just $9</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -33,18 +35,18 @@
     <div class="block block--dark block--skewed-left hero">
         <div class="container grid grid--1x2">
             <header class="block__header hero__content">
-                <h1 class="block__heading">Cloud Hosting for Pros</h1>
+                <h1 class="block__heading" data-aos="fade-right">Cloud Hosting for Pros</h1>
                 <p class="hero__tagline">Deploy your websites in less than 60 seconds</p>
                 <a href="#" class="btn btn--accent btn--stretched">GET STARTED</a>
             </header>
-            <picture>
+            <picture data-aos="zoom-in">
                 <source type="icon/webp" srcset="icons/banner.webp 1x, icons/banner@2x.webp 2x">
                 <source type="image/png" srcset="icons/banner.png 1x, icons/banner@2x.png 2x">
                 <img class="hero__image" src="icons/banner.png" alt="">
             </picture>
         </div>
     </div>
-    <section class="block container block__domain">
+    <section class="block container block__domain" data-aos="fade-up">
         <header class="block__header">
             <h2>Starting at $9 per month</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic quis incidunt facere voluptate esse illo
@@ -68,7 +70,7 @@
             <li>.xyz $10</li>
         </ul>
     </section>
-    <section class="block container block-plans">
+    <section class="block container block-plans" data-aos="fade-up">
         <div class="grid grid--1x3">
             <div class="plan">
                 <div class="card card--secondary">
@@ -138,7 +140,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, temporibus.</p>
         </header>
         <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-right">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="icons/sprite.svg#easy"></use>
@@ -151,7 +153,7 @@
                     eveniet molestiae quam tempora.</p>
                 <a href="#" class="link-arrow">Learn More</a>
             </div>
-            <picture>
+            <picture data-aos="zoom-in-left">
                 <source type="image/webp" srcset="icons/easy.webp, icons/easy@2x.webp 2x">
                 <source type="image/jpg" srcset="icons/easy.jpg 1x, icons/easy@2x.jpg 2x">
                 <img class="feature__image" src="icons/easy@2x.jpg"
@@ -159,7 +161,7 @@
             </picture>
         </article>
         <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-left">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="icons/sprite.svg#computer"></use>
@@ -172,14 +174,14 @@
                     eveniet molestiae quam tempora.</p>
                 <a href="#" class="link-arrow">Learn More</a>
             </div>
-            <picture>
+            <picture data-aos="zoom-in-right">
                 <source type="image/webp" srcset="icons/fast.webp, icons/fast@2x.webp 2x">
                 <source type="image/jpg" srcset="icons/fast.jpg 1x, icons/fast@2x.jpg 2x">
                 <img class="feature__image" src="icons/fast@2x.jpg" alt="Application screenshot showing fast response">
             </picture>
         </article>
         <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-right">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="icons/sprite.svg#wordpress"></use>
@@ -192,9 +194,30 @@
                     eveniet molestiae quam tempora.</p>
                 <a href="#" class="link-arrow">Learn More</a>
             </div>
-            <picture>
+            <picture data-aos="zoom-in-left">
                 <source type="image/webp" srcset="icons/wordpress.webp, icons/wordpress@2x.webp 2x">
                 <source type="image/jpg" srcset="icons/wordpress.jpg 1x, icons/wordpress@2x.jpg 2x">
+                <img class="feature__image" src="icons/wordpress@2x.jpg"
+                    alt="Application screenshot showing wordpress website">
+            </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content" data-aos="fade-left">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use xlink:href="icons/sprite.svg#clock"></use>
+                    </svg>
+                </span>
+                <h3 class="feature__heading">24/7 Expert Support</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores velit deserunt consectetur sint
+                    voluptatum facere voluptatibus in commodi consequatur et facilis repudiandae, quis rem alias
+                    aspernatur
+                    eveniet molestiae quam tempora.</p>
+                <a href="#" class="link-arrow">Learn More</a>
+            </div>
+            <picture data-aos="zoom-in-right">
+                <source type="image/webp" srcset="icons/support.webp, icons/support@2x.webp 2x">
+                <source type="image/jpg" srcset="icons/support.jpg 1x, icons/support@2x.jpg 2x">
                 <img class="feature__image" src="icons/wordpress@2x.jpg"
                     alt="Application screenshot showing wordpress website">
             </picture>
@@ -205,12 +228,12 @@
             <h2>User-friendly Control Panel</h2>
         </header>
         <div class="container grid grid--1x2">
-            <picture class="block-showcase__picture">
+            <picture class="block-showcase__picture" data-aos="fade-right">
                 <source type="image/webp" srcset="icons/ipad.webp 1x, icons/ipad@2x.webp 2x">
                 <source type="image/png" srcset="icons/ipad.png 1x, icons/ipad@2x.png 2x">
                 <img class="block-showcase__image" src="icons/ipad@2x.png" alt="IPad Image">
             </picture>
-            <ul class="list">
+            <ul class="list" data-aos="fade-up">
                 <li>
                     <div class="media">
                         <div class="media__image">
@@ -262,7 +285,7 @@
             </ul>
         </div>
     </section>
-    <section class="block">
+    <section class="block" data-aos="zoom-in">
         <header class="block__header">
             <h2>What our Customers are saying</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, error.</p>
@@ -302,7 +325,93 @@
             </div>
         </div>
     </section>
+    <div class="container">
+        <div class="callout callout--primary callout--signup">
+            <div class="grid grid--1x2">
+                <div class="callout__content">
+                    <h2 class="callout__heading">Ready to Get Started?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quidem expedita earum neque
+                        error mollitia ex eligendi quia quibusdam dicta?
+                    </p>
+                </div>
+                <a href="#" class="btn btn--secondary btn--stretched">GET STARTED</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="block block--dark footer">
+        <div class="container grid footer__grid-section">
+            <section class="collapsible collapsible--expanded footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Products</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="icons/sprite.svg#chevron"></use>
+                    </svg>
+                </div>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="#">Website Hosting</a></li>
+                        <li><a href="#">Free Automated Wordpress</a></li>
+                        <li><a href="#">Migrations</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Company</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="icons/sprite.svg#chevron"></use>
+                    </svg>
+                </div>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Suppport</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="icons/sprite.svg#chevron"></use>
+                    </svg>
+                </div>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Knowledge Base</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Domains</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="icons/sprite.svg#chevron"></use>
+                    </svg>
+                </div>
+                <div class="collapsible__content">
+                    <ul class="list">
+                        <li><a href="#">Domain Checker</a></li>
+                        <li><a href="#">Domain Transfer</a></li>
+                        <li><a href="#">Free Domain</a></li>
+                    </ul>
+                </div>
+            </section>
+            <div class="footer__brand">
+                <img class="footer__image" src="icons/logo.svg" alt="">
+                <p class="footer__copyright">Copyright 2022 Mosh Hamedani</p>
+            </div>
+        </div>
+    </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
